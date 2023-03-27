@@ -3,13 +3,13 @@ body {
     margin: 0;
     font-size: 1.5rem;
     letter-spacing: 0.06rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   #Container1{
     display: flex;
     flex-direction:row ;
     justify-content: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: solid;
     border-color: rgba(0, 0, 0, 0.066);
     border-left: 0px;
@@ -18,9 +18,6 @@ body {
     text-align: center;
   }
 
-  #Container1-annbar{
-
-  }
 
   #Container2{
     display: flex;
@@ -28,24 +25,27 @@ body {
     flex-direction:row ;
     justify-content: center;
     text-align: center;
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
   }
 
 
-
-
-  #Container2-topnav{
-
-  }
-
-  #horizontal-list{
+  .horizontal-list{
     display:flex;
     justify-content: space-around;
     list-style-type: none;
   }
 
-  .box-1{
-    flex: 3;
-    order: 1;
+
+  .Container-column{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Info-Nav{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+
   }
