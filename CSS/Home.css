@@ -34,7 +34,7 @@ margin: 0;
   #Container2{
     display: flex;
     flex-direction:row ;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
   }
 
@@ -44,8 +44,12 @@ margin: 0;
 
   .horizontal-list{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     list-style-type: none;
+  }
+
+  #topnav-men{
+/* create boxes for each item to evenly space them */
   }
 
   .Container-column{
