@@ -3,9 +3,6 @@
   
 }
 
-
-
-
 body {
     margin: 0;
     padding: 0;
@@ -15,6 +12,10 @@ body {
   a {
     text-decoration: none;
     color: black;
+  }
+
+  li{
+    list-style-type: none;
   }
 
   .center-ptext{
@@ -35,25 +36,41 @@ body {
     border-right: 0px;
   }
 
-  #Container2{
-    display: flex;
-    flex-direction:column ;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
 
   .Container2-topnav{
-    justify-content: center;
+    display: flex;
+    flex-direction:row ;
     margin: 0;
+    padding: 0;
   }
 
   #horizontal-list{
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+  }
+
+  #header__heading-logo{
+    max-width : 168px;
+  }
+
+  #hl-bx1{
+    order: 1;
+  }
+
+  #hl-bx2{
+    order: 2;
+  }
+
+  #hl-bx3{
+    order: 3;
+  }
+
+  #hl-bx4{
+    order: 4;
   }
 
   nav ul {
