@@ -1,13 +1,52 @@
-*{
-  border: px solid rgb(253, 0, 0);
-  
-}
-
 body {
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
   }
+
+a, a:hover{
+  text-decoration: none;
+}
+
+.top-bar{
+display:flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 25px;
+background-color: grey;
+}
+
+.top-bar span{
+  color:#fff
+}
+
+.top-bar ul{
+  list-style: none;
+  display:flex;
+}
+
+.top-bar li{
+margin: 0px 5px;
+}
+
+.top-bar a{
+  color: #fff;
+}
+
+  .top-bar a:hover{
+    color: #222;
+  }
+
+  .logo img{
+    width:120px;
+  }
+
+  .center-nav{
+    display:flex;
+    justify-content: space-between;
+  }
+
 
   a {
     text-decoration: none;
@@ -40,18 +79,19 @@ body {
   .Container2-topnav{
     display: flex;
     flex-direction:row ;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
   }
 
-  #horizontal-list{
-    display:flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  nav {
+	display: flex;
+	align-items: center;
+}
 
-  }
+ul{
+  padding: 0px;
+}
 
   #header__heading-logo{
     max-width : 168px;
@@ -59,18 +99,26 @@ body {
 
   #hl-bx1{
     order: 1;
+    padding: 3px;
+    margin: 0px 30px;
   }
 
   #hl-bx2{
     order: 2;
+    padding: 3px;
+    margin: 0px 3px;
   }
 
   #hl-bx3{
     order: 3;
+    padding: 3px;
+    margin: 0px 3px;
   }
 
   #hl-bx4{
     order: 4;
+    padding: 3px;
+    margin: 0px 3px;
   }
 
   nav ul {
