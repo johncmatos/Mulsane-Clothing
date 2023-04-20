@@ -14,7 +14,6 @@ display:flex;
 align-items: center;
 justify-content: space-between;
 padding: 10px 25px;
-background-color: grey;
 }
 
 .top-bar span{
@@ -42,15 +41,34 @@ margin: 0px 5px;
     width:120px;
   }
 
-  .center-nav{
-    display:flex;
-    justify-content: space-between;
+.menu{
+display: flex;
+align-items: center;
+padding-right: 600px;
+}
+
+.menu2{
+  display: flex;
+  align-items: center;
   }
 
+.menu li{
+  padding: 15px 10px;
+  font-size: 16px;
+}
+
+.menu2 li{
+  padding: 15px 10px;
+  font-size: 16px;
+}
 
   a {
     text-decoration: none;
     color: black;
+  }
+
+  .footer-link{
+    color:white;
   }
 
   li{
@@ -59,6 +77,8 @@ margin: 0px 5px;
 
   .center-ptext{
     text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
 
@@ -87,7 +107,14 @@ margin: 0px 5px;
   nav {
 	display: flex;
 	align-items: center;
+
 }
+
+.center-nav{
+  display: flex;
+  justify-content: center;
+}
+
 
 ul{
   padding: 0px;
@@ -97,29 +124,7 @@ ul{
     max-width : 168px;
   }
 
-  #hl-bx1{
-    order: 1;
-    padding: 3px;
-    margin: 0px 30px;
-  }
 
-  #hl-bx2{
-    order: 2;
-    padding: 3px;
-    margin: 0px 3px;
-  }
-
-  #hl-bx3{
-    order: 3;
-    padding: 3px;
-    margin: 0px 3px;
-  }
-
-  #hl-bx4{
-    order: 4;
-    padding: 3px;
-    margin: 0px 3px;
-  }
 
   nav ul {
     display: flex;
@@ -140,4 +145,9 @@ ul{
     flex-direction:column ;
     justify-content: center;
     align-items: center;
+  }
+
+  footer{
+    background-color: rgb(29, 29, 29);
+    color: white;
   }
