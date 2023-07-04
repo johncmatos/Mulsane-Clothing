@@ -3,6 +3,17 @@ body {
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+  }
+
+div {
+    width: 100vw;
+    height: 100vh;
+}
+
+  p{
+    margin: 0;
   }
 
 a, a:hover{
@@ -13,7 +24,7 @@ a, a:hover{
 display:flex;
 align-items: center;
 justify-content: space-between;
-padding: 10px 25px;
+/* padding: 10px 25px; */
 }
 
 .top-bar span{
@@ -26,7 +37,7 @@ padding: 10px 25px;
 }
 
 .top-bar li{
-margin: 0px 5px;
+/*margin: 0px 5px; */
 }
 
 .top-bar a{
@@ -37,8 +48,11 @@ margin: 0px 5px;
     color: #222;
   }
 
-  .logo img{
-    width:120px;
+  .logo{
+    /* width:120px; */
+    display: flex;
+    align-items: center;
+    padding: 1px;
   }
 
 .menu{
@@ -64,16 +78,23 @@ padding-right: 600px;
 
   a {
     text-decoration: none;
-    color: black;
+color:black
   }
 
-  .footer-link{
+  .black-a{
+    color: rgb(0, 0, 0);
+  }
+
+  .white-a{
     color:white;
   }
 
   li{
+
     list-style-type: none;
+
   }
+
 
   .center-ptext{
     text-align: center;
@@ -113,10 +134,11 @@ padding-right: 600px;
 .center-nav{
   display: flex;
   justify-content: center;
+  background-color: rgb(5, 5, 5);
 }
 
 
-ul{
+ul {
   padding: 0px;
 }
 
@@ -145,9 +167,63 @@ ul{
     flex-direction:column ;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .Container-column2{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #Cont-rw-clmn{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    font-size: 1.1rem;
   }
 
   footer{
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(7, 7, 7); 
     color: white;
+  }
+
+  .footer2{
+    background-color: rgb(5, 5, 5);
+    color: white;
+  }
+
+  .footer-link{
+    font-size: 1.2rem;
+  }
+
+  h4{
+    margin: 0; 
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+
+  .line-break{
+    width: 100%;
+    height: 2.5px;
+    background-color: rgb(0, 23, 230); /* Replace 'red' with the desired color */
+    margin: 10px 0; /* Adjust the margin as needed */
+
   }

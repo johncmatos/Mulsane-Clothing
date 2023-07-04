@@ -1,43 +1,110 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+div {
+  width: 100vw;
+  height: 100vh;
+}
+
+p{
+  margin: 0;
+justify-content: center;
+}
+
+li{
+  list-style-type: none;
+}
 
 a, a:hover{
   text-decoration: none;
-}
+  }
 
-.top-bar{
-display:flex;
+  .logo{
+    width:20%; 
+    display: flex;
+    align-items: center;
+  }
+
+.box-1{
+display: flex;
 align-items: center;
-justify-content: space-between;
-padding: 10px 25px;
-background-color: grey;
+} 
+
+.box-2{
+display: flex;
+align-items: center;
+/*padding-right: 400px;*/
 }
 
-.top-bar span{
-  color:#fff
-}
-
-.top-bar ul{
-  list-style: none;
-  display:flex;
-}
-
-.top-bar li{
-margin: 0px 5px;
-}
-
-.top-bar a{
-  color: #fff;
-}
-
-  .top-bar a:hover{
-    color: #222;
+  .box-2 li{
+    /*padding: 15px 10px;*/
+    font-size: 100%; 
   }
 
-  .logo img{
-    width:120px;
+  .box-3{
+    display: flex;
+    align-items: center;
   }
+  
+    a {
+      text-decoration: none;
+  color:black
+    }
+  
+    .black-a{
+      color: rgb(0, 0, 0);
+    }
+  
+    .white-a{
+      color:white;
+    }
+  
+    #Container-1{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow: hidden;
+      text-align: center;
+      border: solid;
+      border-color: rgba(0, 0, 0, 0.066);
+     /* border-left: 0px;
+      border-right: 0px;*/
+      max-height: 19px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    #Container-2{
+      display: flex;
+      justify-content: center;
+      background-color: rgb(5, 5, 5);
+      max-height: 80px;
+      /*max-width:1440px;*/
+    }
+    
+    ul {
+      padding: 0px;
+    }
+    
+    nav ul {
+      display: flex;
+      margin: 0;
+    }
+    
+    nav li {
+      margin: 0;
+    }
+    
+    nav li:last-child {
+      margin-right: 0;
+    }
