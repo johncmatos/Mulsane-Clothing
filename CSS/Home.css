@@ -1,15 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
-  }
-
-div {
-    width: 100vw;
-    height: 100vh;
+body{
+  margin: 0;
+  padding: 0;
 }
 
   p{
@@ -20,61 +11,7 @@ a, a:hover{
   text-decoration: none;
 }
 
-.top-bar{
-display:flex;
-align-items: center;
-justify-content: space-between;
-/* padding: 10px 25px; */
-}
 
-.top-bar span{
-  color:#fff
-}
-
-.top-bar ul{
-  list-style: none;
-  display:flex;
-}
-
-.top-bar li{
-/*margin: 0px 5px; */
-}
-
-.top-bar a{
-  color: #fff;
-}
-
-  .top-bar a:hover{
-    color: #222;
-  }
-
-  .logo{
-    /* width:120px; */
-    display: flex;
-    align-items: center;
-    padding: 1px;
-  }
-
-.menu{
-display: flex;
-align-items: center;
-padding-right: 600px;
-}
-
-.menu2{
-  display: flex;
-  align-items: center;
-  }
-
-.menu li{
-  padding: 15px 10px;
-  font-size: 16px;
-}
-
-.menu2 li{
-  padding: 15px 10px;
-  font-size: 16px;
-}
 
   a {
     text-decoration: none;
@@ -103,64 +40,97 @@ color:black
   }
 
 
-  #Container1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
-    border: solid;
-    border-color: rgba(0, 0, 0, 0.066);
-    border-left: 0px;
-    border-right: 0px;
+  *{
+    box-sizing: border-box;
   }
-
-
-  .Container2-topnav{
-    display: flex;
-    flex-direction:row ;
-    justify-content: space-between;
+  
+  body{
     margin: 0;
     padding: 0;
   }
-
-  nav {
-	display: flex;
-	align-items: center;
-
-}
-
-.center-nav{
-  display: flex;
-  justify-content: center;
-  background-color: rgb(5, 5, 5);
-}
-
-
-ul {
-  padding: 0px;
-}
-
-  #header__heading-logo{
-    max-width : 168px;
-  }
-
-
-
-  nav ul {
+  
+  .navbar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+  }
+  
+  .brand-title{
+  font-size: 1.5rem;
+  margin: .5rem;
+  }
+  
+  .navbar-links ul{
     margin: 0;
+    padding: 0;
+    display: flex;
   }
   
-  nav li {
-    margin: 0;
+  .navbar-links li{
+    list-style: none;
   }
   
-  nav li:last-child {
-    margin-right: 0;
+  .navbar-links li a{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
   }
   
+  .navbar-links li:hover{
+    background-color: #555;
+  }
+  
+  .toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  @media(max-width: 600px) {
+    .toggle-button{
+      display: flex;
+    }
+    .navbar-links{
+      display: none;
+      width: 100%;
+    }
+    .navbar{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar-links ul{
+      width: 100%;
+      flex-direction: column;
+    }
+    .navbar-links li{
+      text-align: center;
+    }
+    .navbar-links li a{
+      padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+      display: flex;
+    }
+  }
+  
+
+
+
 
   .Container-column{
     display: flex;
@@ -225,5 +195,4 @@ ul {
     height: 2.5px;
     background-color: rgb(0, 23, 230); /* Replace 'red' with the desired color */
     margin: 10px 0; /* Adjust the margin as needed */
-
   }
