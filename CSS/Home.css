@@ -36,13 +36,18 @@ a, a:hover{
     font-size: 18px;
   }
 
-  .black-a{
+  .white-a{
     color: white;
+    font-size: 21px;
+    text-decoration: underline;
+    text-decoration-color: white;
   }
 
-  .white-a{
-    color:white;
+  .white-a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 23, 230);
   }
+
 
   li{
 
@@ -165,9 +170,8 @@ a, a:hover{
     flex-direction:column ;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
     /*margin: 50px;*/
-    padding: 0px 50px;
+    padding: 10px 50px;
     background-color: black;
   }
 
@@ -176,7 +180,6 @@ a, a:hover{
     flex-direction:column ;
     justify-content: center;
     align-items: center;
-    /*padding: 10px;*/
   }
 
   #Cont-rw-clmn{
@@ -194,12 +197,7 @@ a, a:hover{
   }
 
   footer{
-    background-color: rgb(7, 7, 7); 
-    color: white;
-  }
-
-  .footer2{
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(17, 17, 17); 
     color: white;
   }
 
@@ -209,15 +207,18 @@ a, a:hover{
 
   h1,h2,h4{
     color: white;
+    font-size: 32px;
   }
 
   h4{
-    margin: 0; 
+    margin: 0;
+    font-size: 21px; 
   }
 
   .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content:left; 
   }
 
   .footer-col{
@@ -235,6 +236,6 @@ a, a:hover{
   .line-break1{
     width: 50%;
     height: 2.5px;
-    background-color: white; /* Replace 'red' with the desired color */
-    margin: 10px 0; /* Adjust the margin as needed */
+    background-color: white;
+    margin: 10px 0;
   }
